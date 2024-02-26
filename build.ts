@@ -25,11 +25,12 @@ try {
         ],
         outdir: distPath,
         external: [
+            // '*'
         ],
         plugins: [
             dts(),
         ],
-        splitting: true,
+        // splitting: true,
         root: './src',
     })
     if (result.success) {
