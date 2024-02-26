@@ -13,22 +13,22 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
+      "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     }
   },
   "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "type": "module",
-  "dependencies": {},
+  "dependencies": {  },
   "devDependencies": {
     "@types/bun": "latest",
-    "bun-plugin-dts": "^0.2.1",
-    "consola": "^3.2.3"
+    "consola": "^3.2.3",
+    "@anymud/bun-plugin-dts": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
