@@ -1,5 +1,3 @@
-import { zip } from './iter'
-
 type Constructor<T> = new (...args: any[]) => T
 
 export type Func<Args extends any[] = void[], T = void> = (...args: Args) => T
@@ -153,7 +151,7 @@ export type ArrayWithLength<L extends number, A extends any[] = []> = Pick<Requi
  * @returns the filled array
  */
 export function arrayFillKeys<T extends PropertyKey, V>(keys: T[], value: V): { [K in T]: V } {
-  return Object.fromEntries(zip(keys, Array(keys.length).fill(value))) as { [K in T]: V }
+  return Object.fromEntries(keys.map(key => [key, value])) as { [K in T]: V }
 }
 
 /**
