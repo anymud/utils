@@ -18,15 +18,18 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
     },
     "./chain": {
       "import": "./dist/chain/index.js",
-      "require": "./dist/chain/index.cjs"
+      "require": "./dist/chain/index.cjs",
+      "types": "./dist/chain/index.d.ts"
     },
     "./iter": {
       "import": "./dist/iter/index.js",
-      "require": "./dist/iter/index.cjs"
+      "require": "./dist/iter/index.cjs",
+      "types": "./dist/iter/index.d.ts"
     }
   },
   "main": "dist/index.cjs",

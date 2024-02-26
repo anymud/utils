@@ -22,15 +22,14 @@ try {
             // iter
             './src/iter/index.ts',
             './src/iter/async.ts',
-            './src/types.ts',
         ],
         outdir: distPath,
         external: [
-            '*',
         ],
         plugins: [
             dts(),
         ],
+        splitting: true,
         root: './src',
     })
     if (result.success) {
