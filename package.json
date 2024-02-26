@@ -1,7 +1,7 @@
 {
   "name": "@anymud/utils",
   "author": "Kyle Tse <shtse8@gmail.com>",
-  "version": "v0.0.2",
+  "version": "v0.0.3",
   "scripts": {
     "test": "bun test",
     "build": "bun build.ts"
@@ -15,6 +15,14 @@
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
+    },
+    "./chain": {
+      "import": "./dist/chain/index.js",
+      "require": "./dist/chain/index.cjs"
+    },
+    "./iter": {
+      "import": "./dist/iter/index.js",
+      "require": "./dist/iter/index.cjs"
     }
   },
   "main": "dist/index.cjs",
@@ -24,11 +32,12 @@
     "dist"
   ],
   "type": "module",
-  "dependencies": {  },
+  "dependencies": {},
   "devDependencies": {
+    "@anymud/bun-plugin-dts": "latest",
     "@types/bun": "latest",
     "consola": "^3.2.3",
-    "@anymud/bun-plugin-dts": "latest"
+    "release-it": "^17.1.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

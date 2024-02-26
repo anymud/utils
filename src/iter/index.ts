@@ -1,4 +1,4 @@
-import type { Range, Tuple, UnwrapArray } from '../types'
+import type { Range, Tuple, UnwrapArray } from '.~~/utils'
 
 export function* repeat(val: number, num: number): Generator<number> {
   for (let i = 0; i < num; i++)
