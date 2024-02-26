@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "test": "bun test",
-    "build": "bun build.ts"
+    "build": "bun build.ts",
+    "release": "bun run test & bun run build & release-it"
   },
   "description": "",
   "license": "MIT",
