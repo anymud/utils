@@ -40,7 +40,8 @@
     "@anymud/bun-plugin-dts": "latest",
     "@types/bun": "latest",
     "consola": "^3.2.3",
-    "release-it": "^17.1.1"
+    "release-it": "^17.1.1",
+    "typedoc": "^0.25.9"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

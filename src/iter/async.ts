@@ -1,4 +1,4 @@
-import { isPromise } from ".~~/utils"
+import { isPromise } from "../types"
 
 export function groupBy<T, K>(keySelector: (item: T) => K) {
     return async function* (source: AsyncGenerator<T>) {

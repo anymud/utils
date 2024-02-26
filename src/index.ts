@@ -1,5 +1,5 @@
-import type { MayBeArray } from '@anymud/utils'
-import {isArray, isObject, throwError} from '@anymud/utils'
+import type { MayBeArray } from './types'
+import {isArray, isObject, throwError} from './types'
 
 type ObjectSelector<T, K, R = T> = (value: T, key: K) => R
 type ObjectPredicate<T, K> = ObjectSelector<T, K, boolean>
@@ -408,4 +408,4 @@ export function isEqual(x: any, y: any, visited = new WeakMap()): boolean {
   return true;
 }
 
-export * from '@anymud/utils'
+export * from './types'
