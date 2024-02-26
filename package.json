@@ -1,0 +1,37 @@
+{
+  "name": "@anymud/package_starter",
+  "author": "Kyle Tse <shtse8@gmail.com>",
+  "version": "v0.0.1",
+  "scripts": {
+    "test": "bun test",
+    "build": "bun build.ts"
+  },
+  "description": "",
+  "license": "MIT",
+  "repository": "https://github.com/anymud/package_starter",
+  "private": false,
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-plugin-dts": "^0.2.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "keywords": []
+}
